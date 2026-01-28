@@ -20,7 +20,7 @@ app.use(express.json());
 app.use(cors());
 app.use("/image", express.static("./public/image")); // serve images
 
-
+//pppppppppppppppp
 // Multer config for image upload
 const storage = multer.diskStorage({
   destination: function (req, file, cb) {
