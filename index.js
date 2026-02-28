@@ -3,11 +3,13 @@ const express = require("express");
 const mongoose = require("mongoose");
 const bcrypt = require("bcryptjs");
 const jwt = require("jsonwebtoken");
-
+// email se Otp 
 const nodemailer = require("nodemailer");
+// Image uplode
 const multer = require("multer");
 const path = require("path");
 const cors = require("cors");
+// Schema Model
 const User = require("./model/User");
 const Category = require('./model/Category');
 const Product = require('./model/Product');
@@ -15,7 +17,7 @@ const Order = require('./model/Order');
 const Banner = require('./model/Banner');
 const PartyBooking = require('./model/PartyBooking');
 const app = express();
-
+// middilwere 
 app.use(express.json());
 app.use(cors());
 app.use("/image", express.static("./public/image")); // serve images
@@ -155,9 +157,7 @@ app.post("/login", async (req, res) => {
 });
 
 
-// =========================
-// FORGOT PASSWORD - SEND OTP
-// =========================
+
 // =========================
 // FORGOT PASSWORD - SEND OTP
 // =========================
